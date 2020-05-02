@@ -68,10 +68,17 @@
     clearInterval(interval);
     textArea.style.borderColor = "#00B3B3";
 
+    resetButton.classList.add("buttonStyle");
+  }
+
+  function removeButtonStyle()
+  {
+    resetButton.classList.remove("buttonStyle");
   }
 
   textArea.addEventListener("keypress", clockStart);
   textArea.addEventListener("keyup", spellCheck);
-  resetButton.addEventListener("click", resetTestor);
+  resetButton.addEventListener("mousedown", resetTestor);
+  resetButton.addEventListener("mouseup", removeButtonStyle);
 
 })();
