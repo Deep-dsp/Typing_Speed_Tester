@@ -55,6 +55,8 @@ header p:nth-child(2)
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-top: 20px;
 }
 
 .mainCon div{
@@ -69,4 +71,42 @@ header p:nth-child(2)
   padding: 15px 50px;
   border-radius: 10px;
   background-color: lightgrey;
+}
+
+textarea
+{
+  border: 15px solid #00B3B3;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+::placeholder
+{
+  font-size: 1.2em;
+  opacity: 0.35;
+}
+
+button
+{
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+  color: #FF650A;
+  border: 8px solid #FF650A;
+  background: none;
+}
+
+button:hover
+{
+  background: #FF650A;
+  color: #fff;
+  cursor: pointer;
+}
+
+.clockCon
+{
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 3em;
 }
