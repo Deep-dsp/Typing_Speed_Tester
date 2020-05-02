@@ -6,7 +6,7 @@
         clockSet = document.querySelector(".twoBox div");
 
 
-  var counter = 0, interval, flag = false;
+  var interval, flag = false;
   var clockHands = [0,0,0,0];
 
   function clockStart()
@@ -59,8 +59,19 @@
     clockHands[2] = Math.floor(clockHands[3] - (clockHands[1]*100) - (clockHands[0]*6000));
   }
 
+  function resetTestor()
+  {
+    textArea.value = "";
+    flag = false;
+    clockHands = [0,0,0,0];
+    clockSet.innerHTML = "00:00:00";
+    clearInterval(interval);
+    textArea.style.borderColor = "#00B3B3";
+
+  }
 
   textArea.addEventListener("keypress", clockStart);
   textArea.addEventListener("keyup", spellCheck);
+  resetButton.addEventListener("click", resetTestor);
 
 })();
