@@ -1,0 +1,154 @@
+body
+{
+  max-width: 1920;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header
+{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+header p:nth-child(1)
+{
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  font-size: 3em;
+  color: #fff;
+
+  text-align: center;
+  align-self: center;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #00B3B3;
+}
+
+header p:nth-child(2)
+{
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2em;
+  color: #fff;
+
+  text-align: center;
+  align-self: center;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: grey;
+}
+
+.mainCon, .textCon
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: lightgrey; */
+}
+
+.twoBox
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 20px;
+}
+
+.mainCon div{
+    padding: 15px;
+}
+
+.paraContainer
+{
+  max-width: 950px;
+}
+
+.paraContainer p
+{
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
+  padding: 15px 50px;
+  border-radius: 10px;
+  background-color: lightgrey;
+}
+
+textarea
+{
+  border: 15px solid #00B3B3;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+::placeholder
+{
+  font-size: 1.2em;
+  opacity: 0.35;
+}
+
+button
+{
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+  color: #FF650A;
+  border: 8px solid #FF650A;
+  background: none;
+}
+
+.buttonStyle
+{
+  transform: scale(0.9, 0.9);
+  -ms-transform: scale(0.9, 0.9);
+  -o-transform: scale(0.9, 0.9);
+  -moz-transform: scale(0.9, 0.9);
+  -webkit-transform: scale(0.9, 0.9);
+}
+
+button:hover
+{
+  background: #FF650A;
+  color: #fff;
+  cursor: pointer;
+}
+
+.clockCon
+{
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 3em;
+}
+
+.mainTextAreanCon
+{
+  display: flex;
+  justify-content: center;
+}
+
+.errorCon
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.errorCon p:nth-child(1)
+{
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 1em;
+}
+
+.errorCon p:nth-child(2)
+{
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 2em;
+  text-align: center;
+  color: red;
+}
