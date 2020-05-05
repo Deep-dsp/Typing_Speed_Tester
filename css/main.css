@@ -63,6 +63,11 @@ header p:nth-child(2)
     padding: 15px;
 }
 
+.paraContainer
+{
+  max-width: 950px;
+}
+
 .paraContainer p
 {
   font-family: 'Roboto', sans-serif;
@@ -118,4 +123,32 @@ button:hover
 {
   font-family: 'Roboto Mono', sans-serif;
   font-size: 3em;
+}
+
+.mainTextAreanCon
+{
+  display: flex;
+  justify-content: center;
+}
+
+.errorCon
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.errorCon p:nth-child(1)
+{
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 1em;
+}
+
+.errorCon p:nth-child(2)
+{
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 2em;
+  text-align: center;
+  color: red;
 }

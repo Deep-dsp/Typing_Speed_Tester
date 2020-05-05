@@ -3,10 +3,11 @@
   const textArea = document.querySelector(".testCon .textArea"),
         contentPara = document.querySelector(".paraContainer p").innerHTML,
         resetButton = document.querySelector(".twoBox button"),
-        clockSet = document.querySelector(".twoBox div");
+        clockSet = document.querySelector(".twoBox div"),
+        errorTag = document.querySelector("#errorDisplay");
 
 
-  var interval, flag = false;
+  var interval, flag = false, errors = 0;
   var clockHands = [0,0,0,0];
 
   function clockStart()
@@ -36,6 +37,9 @@
       else
       {
         textArea.style.borderColor = "red";
+        errors++;
+        errorTag.innerHTML = errors;
+        console.log(errorTag);
       }
   }
 
@@ -64,6 +68,8 @@
     textArea.value = "";
     flag = false;
     clockHands = [0,0,0,0];
+    errors = 0;
+    errorTag.innerHTML = 0;
     clockSet.innerHTML = "00:00:00";
     clearInterval(interval);
     textArea.style.borderColor = "#00B3B3";
